@@ -26,6 +26,14 @@ body {
   background-color: #c59eff;
 }
 
+.l-header *:first-child {
+  margin-top: 0;
+}
+
+.l-header *:last-child {
+  margin-bottom: 0;
+}
+
 .l-main {
   padding: 20px;
 }
@@ -40,6 +48,7 @@ body {
 .l-footer *:first-child {
   margin-top: 0;
 }
+
 .l-footer *:last-child {
   margin-bottom: 0;
 }
@@ -90,6 +99,15 @@ ul {
 /**
  * Liens
  */
+
+a {
+  color: #000000;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: none;
+}
 
 a:focus-visible {
   outline: 3px solid #040012;
