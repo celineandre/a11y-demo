@@ -1,2 +1,1 @@
-# a11y-demo
-Accessible demonstration
+# Démonstration Accessible

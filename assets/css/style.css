@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+/**
+ * Layouts
+ */
+
+.l-header {
+  padding: 20px;
+  background-color: #c59eff;
+}
+
+.l-main {
+  padding: 20px;
+}
+
+.l-footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 20px;
+  background-color: #ebebeb;
+}
+
+.l-footer *:first-child {
+  margin-top: 0;
+}
+.l-footer *:last-child {
+  margin-bottom: 0;
+}
