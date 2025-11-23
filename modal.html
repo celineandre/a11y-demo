@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Démontration accessible</title>
+  <title>Démontration accessible - Fenêtre modale</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
 </head>
 <body>
   <div class="l-wrapper">
     <header class="l-header">
       <h1 class="titreN1">Démontration accessible</h1>
     </header>
-  
-    <main class="l-main">
-      <h2 class="titreN2">Composants</h2>
 
-      <ul>
-        <li><a href="modal.html">Fenêtre modale (modal)</a></li>
-      </ul>
+    <main class="l-main">
+      <h2 class="titreN2">Fenêtre modale (modal)</h2>
+
+      <div class="group-buttons group-buttons-left">
+        <button id="btnConfirm" class="btn">
+          Exemple 1
+        </button>
+
+        <button id="btnAlert" class="btn">
+          Exemple 2
+        </button>
+      </div>
     </main>
   </div>
 
   <footer class="l-footer">
     <p>© Céline André</p>
   </footer>
+
+  <script src="assets/js/modal.js"></script>
 </body>
 </html>

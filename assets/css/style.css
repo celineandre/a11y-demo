@@ -16,6 +16,7 @@ body {
   color: #000000;
 }
 
+
 /**
  * Layouts
  */
@@ -41,4 +42,149 @@ body {
 }
 .l-footer *:last-child {
   margin-bottom: 0;
+}
+
+
+/**
+ * Titres
+ */
+
+.titreN1 {
+  color: #0b046e;
+  font-size: 28px;
+}
+
+.titreN1 .sous-titre {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.titreN2 {
+  margin-bottom: 0;
+  color: #571165;
+  font-size: 24px;
+}
+
+.titreN3 {
+  margin-bottom: 0;
+  color: #113b65;
+  font-size: 20px;
+}
+
+.titreN4 {
+  margin-bottom: 0;
+  color: #010025;
+  font-size: 18px;
+}
+
+
+/**
+ * Listes
+ */
+
+ul {
+  padding-left: 16px;
+}
+
+
+/**
+ * Liens
+ */
+
+a:focus-visible {
+  outline: 3px solid #040012;
+  outline-offset: 2px;
+}
+
+
+/**
+  * Boutons
+  */
+
+.btn {
+  margin-top: 15px;
+  background-color: #120352;
+  border: none;
+  color: #ffffff;
+  padding: 12px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #040012;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #040012;
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  background-color: #757575;
+}
+
+/* Boutons "Confirmation" et "Annulation" */
+
+.btn-confirm,
+.btn-cancel {
+  position: relative;
+  padding-left: 28px;
+}
+
+.btn-confirm::before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 16 16' width='16' height='16'><path fill='white' d='M13.78 3.22a1 1 0 0 1 0 1.41l-7 7a1 1 0 0 1-1.41 0l-3-3A1 1 0 0 1 3.78 7.22l2.29 2.3L12.37 3.2a1 1 0 0 1 1.41 0z'/></svg>");
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-cancel::before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 16 16' width='16' height='16'><path fill='white' d='M3.22 3.22a1 1 0 0 1 1.41 0L8 6.59l3.37-3.37a1 1 0 0 1 1.41 1.41L9.41 8l3.37 3.37a1 1 0 1 1-1.41 1.41L8 9.41l-3.37 3.37a1 1 0 0 1-1.41-1.41L6.59 8 3.22 4.63a1 1 0 0 1 0-1.41z'/></svg>");
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Bouton icône "Fermer" */
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.btn-close:hover,
+.btn-close:focus-visible {
+  background-color: #282828;
+}
+
+.btn-close:focus-visible {
+  outline: 3px solid #040012;
+  outline-offset: 2px;
+}
+
+/* Groupe de boutons */
+
+.group-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.group-buttons-left {
+  justify-content: flex-start;
 }
